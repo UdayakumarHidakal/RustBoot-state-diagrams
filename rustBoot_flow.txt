@@ -33,63 +33,80 @@ style K4 fill:#f16,stroke:#ff9f,stroke-width:2px,color:#fff,stroke-dasharray: 5 
 Plant uml code.
 
 
+@startuml
+
+
+title rustBoot Flow
+
+
+
+
 start
 note right: Power ON / Board Reset
 
-:Rust Boot Start; 
+  :rustBoot Start; 
 
-:Opens Partitions \n 1. Boot Partition\n 2. Update Partition; 
+  :Open Partitions 
+  * Boot 
+  * Update ;
 
-if (Check the trailer magic\n of Boot Partition\n If Boot partition is \n BootInTesting State 0x10) then (True i.e. Updated \nfirmware was not able\n to set the image state \n to success state 0x00)
-  :Trigger the Updated\n set Image state to Updating state;
-  #palegreen: Roll back to the Boot firmware;
+if (Check 
+* Boot is in Testing State \n (0x10)) then (<color:green>True i.e. Swapped \n<color:green>firmware was not able\n <color:green>to set the \n <color:green> success state (0x00))
+  :Trigger Update
+  * set Image state to Updating state;
+  #Orange:Roll back to the Boot firmware;
   kill
-else (False)
-  if (Check if the Update partition \n is in UpdateInUpdatingStage\n0x70) then (True);
-    :Call rust Boot Update \n Open all 3 partitions;
-    if (Verify Integrty \nand authenticity \nof Firmware in \nUpdate partition) then (True)
-      if (Prevent rollback \n if Update Firmware Version \n > \n Boot Firmware version) then (True)
-        :Swap the Update \n partition with \n Boot partition\n set the update image\n flag to Testing state;
-        #palegreen:Jump to the \n updated firmware\n validate the firmware functionality\n set the Image flag \n to success state 0x00;
+else (<color:red>False)
+  if (Check 
+* Update is in Updating State\n(0x70)) then (<color:green>True);
+    :Jump to rustBoot Update
+    Open 3 partitions
+    * Boot
+    * Update
+    * Swap;
+    if (Verify Integrty \nand authenticity \nof Image in \nUpdate partition) then (<color:green>True)
+      if (Prevent rollback \n Check 
+* Update Image Version \n greater than \n Boot Image version) then (<color:green>True)
+        :* Swap the Update
+          partition with
+          Boot partition
+        * Set the update image
+          flag to Testing state;
+        :* Jump to the updated firmware 
+        * validate the firmware functionality
+        * set the Image flag to success state 
+            (0x00);
         stop
-      else
-        #red:Panic!;
+      else(<color:red>False) 
+        #Salmon:Panic!;
         kill
       endif
-    else(False)
-      #red:Panic!;
+    else(<color:red>False)
+      #Salmon:Panic!;
       kill
     endif
-  else (False)
-    switch(Match Boot Partition type \n 1. BootInNewState 0xFF\n 2. BootInSuccessState 0x00)
-    case (1. Boot partition \n is in New state)
-      if (Verify the Integrity \n and autenticity of \n Boot partition) then (True)
-        #palegreen:Jump to the Next firmware\n Boot firmware;
-        #palegreen:Trigger the updated \n Set the Update Image state \n to Updating state 0x70;
+  else (<color:red>False)
+    switch(Check \n * Boot In New State (0xFF)\n * Boot In Success State (0x00))
+    case (* Boot in New state)
+      if (Verify Integrity \n and autenticity of \n Boot Image in \n Boot partition) then (<color:green>True)
+        :Jump to the\n Boot firmware;
+          :Trigger update 
+        * Set the Update Image state
+          to Updating state 
+          (0x70);
         end
-        note right: Power ON / Board Reset
-      else (False)
-        #red:Panic!;
+        note right: Board Reset
+      else (<color:red>False)
+        #Salmon:Panic!;
         kill
       endif
-    case (2. Boot partition is \n in Success state)
-      if (Verify the Integrity \n and autenticity of \n Boot partition) then (True)
-        #palegreen:Jump to the \n Updated firmware\n in Boot partition;
+    case (* Boot in \n Success state)
+      if (Verify Integrity \n and autenticity of \n Update Image in \n Boot partition) then (<color:green>True)
+        :Jump to the \n Update firmware\n in Boot partition;
         end
-      else (False)
-        #red:Panic!;
+      else (<color:red>False)
+        #Salmon:Panic!;
         kill
+
 
 @enduml
-
-if (Verify Integrty \nand authenticity \nof Firmware in \nUpdate partition) then (True)
-      if (Prevent rollback \n if Update Firmware Version \n > Boot Firmware version) then (True)
-        :Swap the Partition
-      else(False)
-        :#red Panic!
-        kill
-      endif
-    else (False)
-      :#red Panic!
-      kill
-    endif
