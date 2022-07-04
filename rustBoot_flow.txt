@@ -47,25 +47,31 @@ note right: Power ON / Board Reset
   :rustBoot Start; 
 
   :Open Partitions 
+  
   * Boot 
   * Update ;
 
 if (Check 
+
 * Boot is in Testing State \n (0x10)) then (<color:green>True i.e. Swapped \n<color:green>firmware was not able\n <color:green>to set the \n <color:green> success state (0x00))
   :Trigger Update
+  
   * set Image state to Updating state;
   #Orange:Roll back to the Boot firmware;
   kill
 else (<color:red>False)
   if (Check 
+  
 * Update is in Updating State\n(0x70)) then (<color:green>True);
     :Jump to rustBoot Update
     Open 3 partitions
+    
     * Boot
     * Update
     * Swap;
     if (Verify Integrty \nand authenticity \nof Image in \nUpdate partition) then (<color:green>True)
       if (Prevent rollback \n Check 
+      
 * Update Image Version \n greater than \n Boot Image version) then (<color:green>True)
         :* Swap the Update
           partition with
@@ -86,11 +92,12 @@ else (<color:red>False)
       kill
     endif
   else (<color:red>False)
-    switch(Check \n * Boot In New State (0xFF)\n * Boot In Success State (0x00))
+    switch(Check \n\n * Boot In New State (0xFF)\n * Boot In Success State (0x00))
     case (* Boot in New state)
       if (Verify Integrity \n and autenticity of \n Boot Image in \n Boot partition) then (<color:green>True)
         :Jump to the\n Boot firmware;
           :Trigger update 
+          
         * Set the Update Image state
           to Updating state 
           (0x70);
