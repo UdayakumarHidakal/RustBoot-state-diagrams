@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="396px" preserveAspectRatio="none" style="width:560px;height:396px;background:#FFFFFF;" version="1.1" viewBox="0 0 560 396" width="560px" zoomAndPan="magnify"><defs/><g><rect height="26.2969" id="_title" style="stroke:#00000000;stroke-width:1.0;fill:none;" width="165" x="196" y="15"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="155" x="201" y="32.9951">Verify Authenticity</text><ellipse cx="279.5" cy="57.2969" fill="#222222" rx="10" ry="10" style="stroke:#222222;stroke-width:1.0;"/><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="202" x="178.5" y="87.2969"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="182" x="188.5" y="108.4355">Take the Firmware Image size</text><rect fill="#F1F1F1" height="47.9375" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="181" x="189" y="141.2656"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="157" x="199" y="162.4043">Take the stored Signature</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="98" x="199" y="176.373">from the header</text><rect fill="#F1F1F1" height="47.9375" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="175" x="192" y="209.2031"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="155" x="202" y="230.3418">Compute Image signature</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="125" x="202" y="244.3105">using FW image size</text><polygon fill="#FFA500" points="209.5,277.1406,349.5,277.1406,361.5,309.1523,349.5,341.1641,209.5,341.1641,197.5,309.1523,209.5,277.1406" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="4" x="209.5" y="287.3511"> </text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="136" x="209.5" y="300.1558">Check Stored Signature</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="66" x="241.5" y="312.9604">is equals to</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="116" x="213.5" y="325.7651">computed Signature</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="4" x="209.5" y="338.5698"> </text><text fill="#008000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="31" x="166.5" y="306.5581">True</text><text fill="#FF0000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="34" x="361.5" y="306.5581">False</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="258" x="11" y="351.1641"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="238" x="21" y="372.3027">Update the hash for the part descriptor</text><rect fill="#DDA0DD" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="260" x="289" y="351.1641"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="240" x="299" y="372.3027">Return False Image Authentication failed</text><line style="stroke:#181818;stroke-width:1.0;" x1="279.5" x2="279.5" y1="67.2969" y2="87.2969"/><polygon fill="#181818" points="275.5,77.2969,279.5,87.2969,283.5,77.2969,279.5,81.2969" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="279.5" x2="279.5" y1="121.2656" y2="141.2656"/><polygon fill="#181818" points="275.5,131.2656,279.5,141.2656,283.5,131.2656,279.5,135.2656" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="279.5" x2="279.5" y1="189.2031" y2="209.2031"/><polygon fill="#181818" points="275.5,199.2031,279.5,209.2031,283.5,199.2031,279.5,203.2031" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="197.5" x2="140" y1="309.1523" y2="309.1523"/><line style="stroke:#181818;stroke-width:1.0;" x1="140" x2="140" y1="309.1523" y2="351.1641"/><polygon fill="#181818" points="136,341.1641,140,351.1641,144,341.1641,140,345.1641" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="361.5" x2="419" y1="309.1523" y2="309.1523"/><line style="stroke:#181818;stroke-width:1.0;" x1="419" x2="419" y1="309.1523" y2="351.1641"/><polygon fill="#181818" points="415,341.1641,419,351.1641,423,341.1641,419,345.1641" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="279.5" x2="279.5" y1="257.1406" y2="277.1406"/><polygon fill="#181818" points="275.5,267.1406,279.5,277.1406,283.5,267.1406,279.5,271.1406" style="stroke:#181818;stroke-width:1.0;"/><!--MD5=[4a39f9f57c990ccf0642de8e0ab12e12]
+@startuml
+title Verify Authenticity 
+
+start
+
+:Take the Firmware Image size; 
+
+:Take the stored Signature \nfrom the header;
+:Compute Image signature\nusing FW image size; 
+
+#orange:if (\nCheck Stored Signature 
+        is equals to
+ computed Signature\n) then (<color:Green>**True**)
+  :Update the hash for the part descriptor;
+  kill
+else (<color:Red>**False**)
+  #plum:Return False Image Authentication failed;
+endif
+kill
+@enduml
+
+PlantUML version 1.2022.7beta2(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

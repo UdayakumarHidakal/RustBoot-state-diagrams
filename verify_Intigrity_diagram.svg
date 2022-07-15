@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="396px" preserveAspectRatio="none" style="width:542px;height:396px;background:#FFFFFF;" version="1.1" viewBox="0 0 542 396" width="542px" zoomAndPan="magnify"><defs/><g><rect height="26.2969" id="_title" style="stroke:#00000000;stroke-width:1.0;fill:none;" width="134" x="202.5" y="15"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="124" x="207.5" y="32.9951">Verify Integrity</text><ellipse cx="275" cy="57.2969" fill="#222222" rx="10" ry="10" style="stroke:#222222;stroke-width:1.0;"/><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="202" x="174" y="87.2969"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="182" x="184" y="108.4355">Take the Firmware Image size</text><rect fill="#F1F1F1" height="47.9375" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="154" x="198" y="141.2656"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="130" x="208" y="162.4043">Take the stored Hash</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="98" x="208" y="176.373">from the header</text><rect fill="#F1F1F1" height="47.9375" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="153" x="198.5" y="209.2031"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="129" x="208.5" y="230.3418">Compute Image Hash</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="125" x="208.5" y="244.3105">using FW image size</text><polygon fill="#FFA500" points="218.5,277.1406,331.5,277.1406,343.5,309.1523,331.5,341.1641,218.5,341.1641,206.5,309.1523,218.5,277.1406" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="4" x="218.5" y="287.3511"> </text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="109" x="218.5" y="300.1558">Check Stored Hash</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="66" x="242.5" y="312.9604">is equals to</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="89" x="222.5" y="325.7651">computed Hash</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="4" x="218.5" y="338.5698"> </text><text fill="#008000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="31" x="175.5" y="306.5581">True</text><text fill="#FF0000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="34" x="343.5" y="306.5581">False</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="258" x="11" y="351.1641"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="238" x="21" y="372.3027">Update the hash for the part descriptor</text><rect fill="#DDA0DD" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="242" x="289" y="351.1641"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="222" x="299" y="372.3027">Return False Image verification failed</text><line style="stroke:#181818;stroke-width:1.0;" x1="275" x2="275" y1="67.2969" y2="87.2969"/><polygon fill="#181818" points="271,77.2969,275,87.2969,279,77.2969,275,81.2969" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="275" x2="275" y1="121.2656" y2="141.2656"/><polygon fill="#181818" points="271,131.2656,275,141.2656,279,131.2656,275,135.2656" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="275" x2="275" y1="189.2031" y2="209.2031"/><polygon fill="#181818" points="271,199.2031,275,209.2031,279,199.2031,275,203.2031" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="206.5" x2="140" y1="309.1523" y2="309.1523"/><line style="stroke:#181818;stroke-width:1.0;" x1="140" x2="140" y1="309.1523" y2="351.1641"/><polygon fill="#181818" points="136,341.1641,140,351.1641,144,341.1641,140,345.1641" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="343.5" x2="410" y1="309.1523" y2="309.1523"/><line style="stroke:#181818;stroke-width:1.0;" x1="410" x2="410" y1="309.1523" y2="351.1641"/><polygon fill="#181818" points="406,341.1641,410,351.1641,414,341.1641,410,345.1641" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="275" x2="275" y1="257.1406" y2="277.1406"/><polygon fill="#181818" points="271,267.1406,275,277.1406,279,267.1406,275,271.1406" style="stroke:#181818;stroke-width:1.0;"/><!--MD5=[95066615ad4e76d0eb265bb35e83f0e1]
+@startuml
+title Verify Integrity 
+
+start
+
+:Take the Firmware Image size; 
+
+:Take the stored Hash \nfrom the header;
+
+:Compute Image Hash \nusing FW image size;
+
+#orange:if (\nCheck Stored Hash 
+      is equals to
+ computed Hash\n) then (<color:Green>**True**)
+  :Update the hash for the part descriptor;
+  kill
+else (<color:Red>**False**)
+  #plum:Return False Image verification failed;
+endif
+kill
+@enduml
+
+PlantUML version 1.2022.7beta2(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
